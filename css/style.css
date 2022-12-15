@@ -11,7 +11,7 @@
     --secondary:#fc7b54;
 }
          /******************
-             header section start
+              header section start
                 ********************/       
 .navlist{
    
@@ -21,13 +21,11 @@
 
 .lns{
   
-    border-radius: 20px;
     padding:5px 10px;
-    box-shadow: 0 0 5px 3px gray;
-  
+    box-shadow: -2px -3px 5px 3px gray;
 }
 .navlist2 i{
-    color:#9f44d8; 
+    color:#17808a; 
     padding-right:6px;
     font-weight: bold;
     font-size:1.5rem;
@@ -41,40 +39,69 @@
 .navlist2 a:hover{
     margin-bottom: auto;
 }
+
+@media(min-width:368px){
+  .ulgrid{
+	display:grid!important;
+	grid-template-columns:1fr 1fr 1fr ;
+    }	
+}
+@media(min-width:768px){
+	.ulgrid{
+	display:grid!important;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    }
+}
+@media(min-width:1024px){
+	.ulgrid{
+	display:grid!important;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+}
+
        /******************
             banner section start
-             ************************/
+            ************************/
+.banner{
+    background-color:#dff0ef;
+}
 .ban-img{
-    background-color: #73497d;
-   border-radius: 20%;
+   background-color:#17808a;
    position:relative;
    overflow: hidden;
+   border: 8px solid #8ec7cc;
+   border-radius: 10pc 150px;
+  
 }
-
-/* .nav-arrow{
-    border-top:10px solid #2b2b31;
-    border-radius: 20%;
-    border-bottom:10px solid #2b2b31;   
-} */
+@media(min-width:390px){
+ .ban-img{  
+    background: repeating-linear-gradient(333deg,#17808a, transparent 13px);
+   }
+}
+@media(min-width:768px){
+    .ban-img{  
+       background: repeating-linear-gradient(333deg,#17808a, transparent 15px);
+      }
+   }
+   @media(min-width:1024px){
+    .ban-img{  
+       background: repeating-linear-gradient(333deg,#17808a, transparent 15px);
+      }
+   }
 
 .ban-ul li i{
-    color:#f16b07;
+    color:#17808a;
+}
+.text-definition{
+   line-height:0rem !important;
 }
 
-.multicolortext {
-    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
       /******************
             about section start
              ************************/
 
 .aboutw p span{
       display:block;
-      text-transform:capitalize;
 }
 .btni-3{
         color: #fff !important;
@@ -90,60 +117,149 @@
     width:6vw;
     height:2px;
     background-color: #f16b07;
+    background:repeating-linear-gradient(292deg,#17808a, transparent 31px);
     border-radius:20%;
-    top:2.3rem;
+    top:2.5rem;
     bottom:0;
     left:0;
     right:0;
     margin:auto;
 }
+@media(min-width:728px){
+    .resi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+ .abtn{
+    color: none;
+ }
+    a:link{
+        text-decoration: underline;
+        color:none;
+    }
+    a:hover {
+        text-decoration: none;
+        font-style: unset;
+    }
+
+    
 
       /******************
             skills section start
-             ************************/
+       ************************/
+.skills{
+    background-color:#dff0ef;
+    padding: 3rem 0;
+}
 .progress1{
   display: block;
   width:80%;
   text-align: center;
   height:0.7rem;
-  background-color:#fbcfc2;
+  background-color:#8ec7cc;
   border-radius:16px;
 }     
 .progress2{
     display: block;
     width:50%;
     height:0.7rem;
-    background-color:#fc7b54;
+    background: repeating-linear-gradient(45deg,#17808a, transparent 10px);
     border-radius:16px;
 } 
 .bg-new{
     background-color:#fc7b54; 
 }  
 
-      /******************
-            service section start
-             ************************/
+            /**********************
+             service section start
+            ************************/
  .service-i{
-   font-size:4rem;
+   font-size:2.5rem;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
  }
+ .service-i i{
+    display: inline-block;
+    border:5px dotted #17808a;
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+      /***********************
+            project section
+      ************************/
+.projects{
+    background-color:#dff0ef; 
+    padding: 3rem; 
+}
+@media(min-width:360px){
+.imgd{
+    margin: auto;
+    width:100%;
+    } 
+}
+@media(min-width:600px){
+    .imgd{
+        margin: auto;
+        width:100%;
+        } 
+    }
+    @media(min-width:1024px){
+        .imgd{
+            margin: auto;
+            width:50%;
+            } 
+        }
  
-      /******************
-            footer section start
-             ************************/
+      /**********************
+       footer section start
+      ************************/
+
 .f-icon i{
-    color:#fff;
-    background-color:#f16b07;
+    color:#17808a;
+    background-color:#8ec7cc;
     padding:0.4rem 0.6rem;
     margin:auto;
     border-radius:50%;
     font-size:1rem;
 }
+@media(min-width:390px){
+   .f-icon{
+     display:flex;
+     justify-content: space-between;
+   } 
+}
+@media(min-width:600px){
+    .f-icon{
+      display:flex;
+      justify-content:flex-start;
+    } 
+    .f-icon a{
+        margin:0 10px;
+    }
+ }
+ @media(min-width:1024px){
+    .f-icon{
+      display:flex;
+      justify-content:flex-start;
 
-    
-
+    } 
+    .f-icon a{
+        margin:0 10px;
+    }
+ }
 .quick2 i {
-    color:#fff;
-    background-color:#f16b07;
+    color:#17808a;
+    background-color:#8ec7cc;
     padding:0.4rem 0.6rem;
     border-radius:50%;
     font-size:1rem;
@@ -158,13 +274,22 @@
     margin:8.5px;
 }
 #quick li i {
-    color:#fff;
-    background-color:#f16b07;
+    color:#17808a;
+    background-color:#8ec7cc;
     padding:0.4rem 0.6rem;
     border-radius:50%;
     font-size:1rem;
+    font-weight:900px;
 }
+@media(min-width:1024px){
+  .resi1{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
 
 
 
