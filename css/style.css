@@ -88,7 +88,9 @@
        background: repeating-linear-gradient(333deg,#17808a, transparent 15px);
       }
    }
-
+.ban-ul{
+    padding-left: 0;
+}
 .ban-ul li i{
     color:#17808a;
 }
@@ -106,6 +108,13 @@
 .btni-3{
         color: #fff !important;
         background-color: #17808a !important;
+    
+}
+.btni-3:hover{
+    background-color: #fff !important;
+}
+.btni-3 a:hover{
+    color:#17808a;
 }
 .uline{
     position: relative;
@@ -160,6 +169,8 @@
   height:0.7rem;
   background-color:#8ec7cc;
   border-radius:16px;
+  margin-top:0.5rem;
+  margin-bottom: 2rem;
 }     
 .progress2{
     display: block;
@@ -167,6 +178,8 @@
     height:0.7rem;
     background: repeating-linear-gradient(45deg,#17808a, transparent 10px);
     border-radius:16px;
+    margin-top:0.5rem;
+    margin-bottom: 2rem;
 } 
 .bg-new{
     background-color:#fc7b54; 
@@ -201,6 +214,7 @@
     background-color:#dff0ef; 
     padding: 3rem; 
 }
+
 @media(min-width:360px){
 .imgd{
     margin: auto;
